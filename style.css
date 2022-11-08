@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 170px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(77, 236, 228);
+    font-weight: 600;
+    font-size: 18px;
+}
+.navbar ul li a::after{
+    content: '';
+    height: 3px;
+    background-color: gold;
+    left: 0;
+    width: 0;
+    bottom: -10px;
+    position: absolute;
+    transition: 0.5s;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    top: 40%;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+.content h1{
+    margin: 20px auto;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+button{
+    width: 200px;
+    padding: 13px 0;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid rgb(24, 226, 233);
+    color: wheat;
+    cursor: pointer;
+    background: transparent;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+button span{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: rgb(22, 153, 51);
+    color: white;
+}
